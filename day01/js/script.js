@@ -63,3 +63,5 @@ you
 `;
 
 console.log(javascriptTemplateString);
+
+var resp = alert('clicking an alert button');
