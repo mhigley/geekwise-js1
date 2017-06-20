@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    margin: 0;
+    background-color: hsla(0, 0%, 8%, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+main {
+    width: calc(65% + 5vw);
+    background-color: hsla(0, 0%, 93%, 1);
+    display: flex;
+    margin: calc(2.5vw + 1vw) auto;
+    padding: calc(16px + 1vw);
+    border-radius: 8px;
+}
+article {
+    flex: 3;
+    padding-right: calc(16px + 1vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+aside {
+    flex: 2;
+    text-align: center;
+    border-left: 1px solid hsla(0, 0%, 8%, .10);
+    padding-left: calc(16px + 1vw);
+}
+figure {
+    margin: 0;
+    margin-top: 64px;
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+h1, h2 {
+    margin: 0 0 calc(18px / 2);
+}
+p {
+    margin: 0;
+}
+img {
+    border-radius: 4px;
+}
+input {
+    padding: calc(18px / 4);
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    box-sizing: border-box;
+    border: 1px solid hsla(0, 0%, 8%, .25);
+    border-radius: 2px;
+}
+input[type="text"]{
+    width: 100%;
+    margin-bottom: calc(18px / 4);
+}
+input[type="submit"]{
+    align-self: flex-end;
+    padding: calc(18px / 4) 18px;
+    background-image: linear-gradient(to top, hsla(85, 30%, 43%, 1), hsla(85, 30%, 50%, 1));
+    border-color: hsla(85, 30%, 33%, 1);
+    text-shadow: 1px 1px 0 hsla(85, 30%, 33%, 1);
+    color: hsla(0, 0%, 93%, 1);
+    font-weight: 100;
+    cursor: pointer;
+}
+input[type="submit"]:hover {background-image: linear-gradient(to top, hsla(85, 30%, 38%, 1), hsla(85, 30%, 45%, 1));}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    flex: none;
+    min-width: 35%;
+    margin: 0 auto calc(18px / 4);
+    border: 1px solid hsla(0, 0%, 8%, .10);
+    box-sizing: border-box;
+    padding: calc(18px / 2);
+    border-radius: 4px;
+}
+li img {
+    width: 85px;
+    height: auto;
+}

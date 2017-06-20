@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+form#nav {
+    background-color: hsla(200, 30%, 70%, 1);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+form#nav input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid hsla(200, 30%, 60%, 1);
+    font-size: 1em;
+}
+
+form#sticky {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 50vw;
+    min-height: 50vh;
+    background-color: hsl(44, 74%, 75%);
+    padding: 10px;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, .5);
+}
+form#sticky button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+}
+form#sticky input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid hsla(200, 30%, 60%, 1);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 1em;
+}

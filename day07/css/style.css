@@ -1,0 +1,15 @@
+ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: hsla(300, 30%, 40%, 1);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: -100px;
+    transition: top .5s;
+}
+ul.vis {
+    top: 0px;
+}

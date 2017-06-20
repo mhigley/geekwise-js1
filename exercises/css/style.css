@@ -1,0 +1,144 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+html {
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.25;
+    background-color: hsl(0, 0%, 18%);
+    padding: 64px 0;
+}
+h3 {
+    padding: 0 16px;
+    margin: 0 0 16px 0;
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    font-weight: 400;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    width: calc(65% + 5vw);
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    filter: drop-shadow(4px 4px 8px hsla(0, 0%, 0%, .85));
+    transition: width 100ms;
+}
+
+@media screen and (min-width: 72em){
+    main {width: calc(50% + 5vw);}
+}
+
+.hidden {
+    display: none;
+}
+
+.users, .add-user {
+    flex: 1;
+    position: relative;
+}
+.users h3::before {
+    font-family: 'fontawesome';
+    content: '\f286';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -35%, 0);
+    font-size: 5vw;
+    color: hsla(200, 20%, 58%, .5);
+}
+.users h3 {
+    border: none;
+}
+.users li {
+    display: flex;
+    border: 1px solid hsl(0, 0%, 90%);
+    background-color: white;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    align-items: center;
+    position: relative;
+}
+.users li:first-child {
+    margin-top: 0;
+}
+.users li:last-child {
+    margin-bottom: 0;
+}
+.users img {
+    flex: none;
+    margin-right: 8px;
+    width: 64px;
+    height: auto;
+}
+.users span {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+
+
+
+
+.add-user form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 8px;
+    border-radius: 4px;
+}
+.add-user label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.add-user span {
+    flex: 1;
+    white-space: nowrap;
+    margin-right: 8px;
+    text-align: right;
+}
+.add-user input {
+    padding: 4px;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 1px solid hsl(0, 0%, 90%);
+    box-sizing: border-box;
+    background-color: white;
+}
+.add-user input[type="submit"]{
+    align-self: flex-end;
+    border: 1px solid hsl(0, 23%, 67%);
+    background-color: hsl(0, 23%, 77%);
+    text-shadow: 1px 1px 0 hsl(0, 23%, 57%);
+    color: white;
+    padding: 4px 16px;
+    cursor: pointer;
+}

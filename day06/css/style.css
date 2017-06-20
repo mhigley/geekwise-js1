@@ -1,0 +1,4 @@
+p.red {
+    color: red;
+    transition: color .5s;
+}
